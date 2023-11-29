@@ -34,7 +34,7 @@ public class Homework2 {
     ch.setFormatter(sFormat);
     logger.log(Level.WARNING,"");
 
-    int[] array =new int[]{9, 3, 4, 8, 2, 5, 7, 1, 6, 10};
+    int[] array =new int[]{9, 4, 8, 3, 1};
     BubbleSort ans = new BubbleSort();
     ans.sort(array);
     for(int i=0; i<array.length; i++){
@@ -84,18 +84,31 @@ class BubbleSort {
             log.delete();
         }
          
-        int temp=0;
-            for (int i = 0; i < mas.length; i++) {
+       // int temp=0;
+            // for (int i = 0; i < mas.length; i++) {
 
-            for (int j = 1; j < mas.length - i; j++) {
-                if (mas[j-1] > mas[j]) {
+            // for (int j = 1; j < mas.length - i; j++) {
+            //     if (mas[j-1] > mas[j]) {
 
-                    temp = mas[j-1];
-                    mas[j-1] = mas[j];
-                    mas[j] = temp;
+            //         temp = mas[j-1];
+            //         mas[j-1] = mas[j];
+            //         mas[j] = temp;
 
+            //     }
+            // }
+             int length = mas.length;
+        while (length != 0){
+            int max_index = 0;
+            for (int i = 1; i < length; i++){
+                if (mas[i-1] > mas[i]){
+                    int temp = mas[i-1];
+                    mas[i-1] = mas[i];
+                    mas[i] = temp;
+
+                    max_index = i;
                 }
             }
+            length = max_index;
            
         
 
