@@ -37,21 +37,21 @@ public class Homework1{
     //Напишите класс Calculator, который будет выполнять математические операции (+, -, *, /) над двумя числами и возвращать результат. В классе должен быть метод calculate, который принимает оператор и значения аргументов и возвращает результат вычислений.
 
 }
-    class Calculator {
-        public int calculate(char op, int a, int b) {
-            int result=0;
+    // class Calculator {
+    //     public int calculate(char op, int a, int b) {
+    //         int result=0;
 
-            switch(op){
-                case '+': result =a+b;
-                break;
-                case '-': result =a-b;
-                break;
-                case '*': result =a*b;
-                break;
-                case '/': result =a/b;
-                break;
+    //         switch(op){
+    //             case '+': result =a+b;
+    //             break;
+    //             case '-': result =a-b;
+    //             break;
+    //             case '*': result =a*b;
+    //             break;
+    //             case '/': result =a/b;
+    //             break;
              
-            }
-            return result;
-        }
-    }
+    //         }
+    //         return result;
+    //     }
+    // }
